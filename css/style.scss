@@ -1,0 +1,1039 @@
+/* Aleksey Skubaev
+
+askubaev@gmail.com
+icq - 322253350
+test-templates.com
+------------------
+*/
+
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #000;
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #151515;
+}
+
+input, textarea {
+	outline: none;
+}
+
+h1, h2, h3, h4, form {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+}
+
+html, body {
+	min-height: 100vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+.wrapper {
+	min-height: 100vh;
+	width: 100%;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	min-height: 100vh;
+	max-width: 450px;
+	max-height: 750px;
+	background: #fff;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: space-evenly;
+	position: relative;
+	h1 {
+		text-align: left;
+		padding: 10px;
+		font-family: 'Comfortaa', cursive;
+		font-weight: bold;
+		color: #015AAA;
+	}
+	p {
+		text-align: center;
+		font-family: 'Comfortaa', cursive;
+		display: flex;
+		flex-direction: column;
+		color:#999999;
+		position: relative;
+		span {color:#707070}
+	}
+	p:before {
+		content: '';
+		width: 60%;
+		height: 60%;
+		background: url('../click.svg') center/ auto 100% no-repeat;
+		position: absolute;
+		bottom: -60%;
+		left: 20%;
+	}
+}
+.main-wrap {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+}
+	.animals-menu {
+		width: 300px;
+		height: 300px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 4;
+	}
+	
+	.in {
+		width: 100%;
+		height: 100%;
+		background: url(../imagesDOG/bg.svg) center center no-repeat;
+		background-size: cover;
+		position: absolute;
+	}
+	
+		.dog {
+			background: url(../imagesDOG/dog.svg) center center no-repeat;
+			background-size: 100%;
+			width: 45%;
+			height: 45%;
+			position: absolute;
+			left: 50%;
+			
+			margin: 0 0 0 -22.5%;
+			animation: dog 12s infinite;
+		}
+			.dog-container {
+				position: relative;
+				height: 100%;
+				width: 100%;
+			}
+			.bell {
+				width: 5%;
+				height: 5%;
+				position: absolute;
+				background: url(../imagesDOG/bell.svg) center center no-repeat;
+				left: 55%;
+				top: 90%;
+				margin: 0 0 0 -50%;
+				animation: bell 0.5s linear infinite alternate;
+				
+			}
+			
+			.eye2 {
+				position: absolute;
+				right: 31%;
+				width: 11%;
+				top: 48%;
+				height: 11%;
+				background: url(../imagesDOG/eye.svg) center center no-repeat;
+				background-size: 100% auto;
+				animation: eye 12s linear infinite;
+				border-radius: 100%;
+			}
+			
+				.mmm {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: url(../imagesDOG/m.svg) center center no-repeat;
+					background-size: 100% auto;
+					animation: m 12s linear infinite;
+					opacity: 0;
+				}
+			
+			.eye1 {
+				position: absolute;
+				TOP: 48%;
+				left: 32%;
+				width: 11%;
+				height: 11%;
+				background: url(../imagesDOG/eye.svg) center center no-repeat;
+				animation: eye 12s linear infinite;
+				border-radius: 100%;
+			}
+			
+@keyframes dog {
+	0%{
+		transform: rotate(0deg);
+		top: 5%
+	}
+	10%{
+		transform: rotate(3deg);
+		top: 5%;
+	}
+	20%{
+		transform: rotate(-3deg);
+		top: 5%;
+	}
+	30%{
+		transform: rotate(3deg);
+		top: 5%;
+	}
+	40%{
+		transform: rotate(-3deg);
+		top: 9%;
+	}
+	50%{
+		transform: rotate(3deg);
+		top: 9%;
+	}
+	70%{
+		transform: rotate(-10deg);
+		top: 9%;
+	}
+	80%{
+		top: 9%;
+	}
+	90%{
+		top: 9%;
+	}
+	100%{
+		transform: rotate(0deg);
+		top: 5%;
+	}
+	
+}
+
+@keyframes bell {
+	0%{
+		margin-left: -5%;
+	}
+	100%{
+		margin-left: -2%;
+	}
+	
+}
+
+@keyframes eye {
+	0%{
+		top: 48%;
+	}
+	5%{
+		top: 48%;
+	}
+	10%{
+		top: 48%;
+		
+	}
+	9%{
+		top: 49%;
+		background-size: 100% auto;
+		
+	}
+	11%{
+		top: 49%;
+		background-size: 100% 2px;
+		
+	}
+	13%{
+		top: 49%;
+		background-size: 100% auto;
+		
+	}
+	20%{
+		top: 49%;
+		height: 15%;
+	}
+	30%{
+		top: 48%;
+	}
+	40%{
+		top: 48%;
+	}
+	50%{
+		top: 48%;
+	}
+	60%{
+		top: 48%;		
+	}
+	61%{
+		top: 49%;
+		background-size: 100% auto;
+		
+	}
+	62%{
+		top: 49%;
+		background-size: 100% 2px;
+		
+	}
+	63%{
+		top: 49%;
+		background-size: 100% auto;
+		
+	}
+	70%{
+		top: 49%;
+	}
+	80%{
+		top: 49%;
+	}
+	81%{
+		top: 49%;
+		background-size: 100% auto;
+		
+	}
+	82%{
+		top: 49%;
+		background-size: 100% 2px;
+		
+	}
+	83%{
+		top: 49%;
+		background-size: 100% auto;
+		
+	}
+	90%{
+		top: 49%;
+	}
+	100%{
+		top: 48%;
+	}
+	
+}
+
+@keyframes m {
+	0%{
+		opacity: 0;
+	}
+	5%{
+		opacity: 0;
+	}
+	10%{	
+		opacity: 0;
+	}
+	9%{
+		opacity:0;
+	}
+	11%{
+		opacity: 1;
+	}
+	12%{
+		opacity: 0;
+	}
+	20%{
+		
+	}
+	30%{
+		
+	}
+	40%{
+		
+	}
+	50%{
+		
+	}
+	61%{
+		opacity:0;
+	}
+	62%{
+		opacity: 1;
+	}
+	63%{
+		opacity: 0;
+	}
+	70%{
+		
+	}
+	80%{
+		
+	}
+	81%{
+		opacity:0;
+	}
+	82%{
+		opacity: 1;
+	}
+	83%{
+		opacity: 0;
+	}
+	90%{
+		
+	}
+	100%{
+		
+	}
+	
+}
+.in-yan {
+	-webkit-animation: in-yan 0.5s forwards;
+}	
+.dog-in-yan {
+	animation: dog-in-yan 1s  forwards;
+}
+.dog-in-yan:after {
+	content: '';
+	width: 10%;
+	height: 10%;
+	background: url('../imagesDOG/mouth.svg') center/ 100% auto no-repeat;
+	position: absolute;
+	top: 64.5%;
+	left: 50%;
+	margin: 0 0 0 -4.5%;
+	opacity: 0;
+	animation: mouth 0.7s 1s linear forwards;
+}
+@keyframes mouth {
+	0% {}
+	100% {opacity: 1;}
+}
+.dog-in-yan:before {
+	content: '';
+	width: 50%;
+	height:50%;
+	position: absolute;
+	bottom: -100%;
+	opacity: 0;
+	left: -10%;
+	background: url('../imagesDOG/hand.svg') center/100% 100% no-repeat;
+	animation: dog-hand 1s 1.7s forwards;
+}
+@keyframes dog-hand {
+	0% {
+		bottom: -100%;
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		bottom: 0%;
+		transform: rotate(0deg);
+	}
+	75% {
+		opacity: 1;
+		bottom: 0%;
+		transform: rotate(30deg);
+	}
+	100% {
+		opacity: 1;
+		bottom: 0%;
+		transform: rotate(0deg);
+	}
+}
+@keyframes in-yan {
+	0% {
+		transform: rotate(0deg);
+		
+	}
+	60% {
+		background: url(../imagesDOG/bg.svg) center/100% auto no-repeat;
+		transform: rotate(-360deg);
+	}
+	100% {
+		height: 600%;
+		width: 600%;
+		transform: rotate(-360deg);
+		background: #fff;
+	}
+}
+@keyframes dog-in-yan {
+	0%{
+		background: url(../imagesDOG/dog.svg) center center no-repeat;
+			background-size: 100%;
+			width: 45%;
+			height: 45%;
+			position: absolute;
+			left: 50%;
+			top: 0;
+			margin: 0 0 0 -22.5%;
+	}
+	100% {
+		width: 70%;
+		height: 70%;
+		margin: -35% 0 0 -35%;
+		left: 50%;
+		top: 50%;
+	}
+}
+.bell-in-yan {
+	position: absolute;
+	width: 13%;
+	height: 13%;
+	left: 48%;
+	margin: 0;
+	background: url(../imagesDOG/bell.svg) center/auto 100% no-repeat;
+	animation: bell 0.5s linear infinite alternate;
+	
+}
+.eye2-in-yan {
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 50%;
+	right: 32%;
+	background: url(../imagesDOG/eye.svg) center center/ 100% auto no-repeat;
+	background-size: 100% auto;
+	animation: eye-in-yan 0.7s 1s linear;
+	border-radius: 100%;
+}
+
+	.mmm-in-yan {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url(../imagesDOG/m.svg) center center no-repeat;
+		background-size: 100% auto;
+		opacity: 0;
+		animation: mmm-in-yan 0.7s 1s linear;
+	}
+	
+
+.eye1-in-yan {
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 50%;
+	left: 33%;
+	background: url(../imagesDOG/eye.svg) center center/ auto no-repeat;
+	animation: eye-in-yan 0.7s 1s linear;
+	border-radius: 100%;
+}
+@keyframes mmm-in-yan {
+	0%{
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes eye-in-yan {
+	0% {
+		background-size: 100% auto;
+	}
+	50% {
+		background-size: 100% 2px;
+	}
+	100% {
+		background-size: 100% auto;
+	}
+}
+
+.dog-container-in-yan:before {
+	content: '';
+	width: 8%;
+	height: 0%;
+	background: url('../imagesDOG/saliva1.svg') center/ 100% auto no-repeat;
+	position: absolute;
+	top: 71.7%;
+	left: 48%;
+	opacity: 0;
+	animation: saliva 0.7s linear 2.7s forwards;
+}
+.dog-container-in-yan:after {
+	content: '';
+	width: 8%;
+	height: 0px;
+	background: url('../imagesDOG/saliva2.svg') center/ 100% auto no-repeat;
+	position: absolute;
+	top: 70%;
+	left: 40%;
+	opacity: 0;
+	animation: saliva 0.5s linear 2.7s forwards;
+}
+@keyframes saliva {
+	0% {
+		opacity: 0;
+		height: 0;
+	}
+	100% {
+		opacity: 1;
+		height: 8%;
+	}
+}
+
+
+
+
+
+
+/*CAT*/ 
+.cat {
+	background: url(../imagesCAT/catBG.svg) center/ auto 100% no-repeat;
+	width: 35%;
+	height: 35%;
+	position: absolute;
+	right: 50%;
+	bottom: 5%;
+	margin: 0 -19% 0 0 ;
+}
+.cat:before {
+	content: '';
+	position: absolute;
+	background: url('../imagesCAT/mouth.svg') center/100% auto no-repeat;
+	width: 30%;
+	height: 0%;
+	opacity: 0;
+	top: 48%;
+	left: 34%;
+	animation: catmouth 12s infinite;
+}
+
+.cat-eye1,
+.cat-eye2 {
+	background: url('../imagesCAT/eye.svg') center/auto 100% no-repeat;
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	top: 23%;
+}
+.cat-eye1 {left: 20%;}
+.cat-eye2 {right: 20%;}
+.cat-mmm {
+	height: 70%;
+	width: 70%;
+	left: 15%;
+	background: url('../imagesCAT/eye2.svg') center/auto 100% no-repeat;
+	position: absolute;
+	animation: cat 12s infinite;
+}
+.cat-hand {
+	width: 70%;
+	height: 80%;
+	position: absolute;
+	z-index: 3;
+	bottom: -20%;
+	left: 0;
+	opacity: 0;
+	background: url('../imagesCAT/hand.svg') center/auto 70% no-repeat;
+	animation: cathand 12s infinite;
+}
+
+
+@keyframes cat {
+	0%{
+		/*transform: rotate(0deg);
+		bottom: 5%;*/
+		top:15%;
+		left: 15%;
+	}
+	10%{
+		/*transform: rotate(3deg);
+		bottom: 5%;*/
+		top:0%;
+		left: 15%;
+	}
+	20%{
+		/*transform: rotate(-3deg);
+		bottom: 5%;*/
+		top:15%;
+		left: 15%;
+	}
+
+	30%{
+		/*transform: rotate(3deg);
+		bottom: 5%;*/
+		top:30%;
+		left: 10%;
+	}
+	33%{
+		/*transform: rotate(-3deg);
+		bottom: 9%;*/
+		top:30%;
+		left: 15%;
+	}
+	36%{
+		/*transform: rotate(3deg);
+		bottom: 9%;*/
+		top:30%;
+		left: 20%;
+	}
+	38% {
+		top:30%;
+		left: 15%;
+	}
+
+	40%{
+		/*transform: rotate(3deg);
+		bottom: 5%;*/
+		top:30%;
+		left: 10%;
+	}
+	43%{
+		/*transform: rotate(-3deg);
+		bottom: 9%;*/
+		top:30%;
+		left: 15%;
+	}
+	46%{
+		/*transform: rotate(3deg);
+		bottom: 9%;*/
+		top:30%;
+		left: 20%;
+	}
+	48% {
+		top:30%;
+		left: 15%;
+	}
+	50%{
+		/*transform: rotate(3deg);
+		bottom: 5%;*/
+		top:30%;
+		left: 10%;
+	}
+	53%{
+		/*transform: rotate(-3deg);
+		bottom: 9%;*/
+		top:30%;
+		left: 15%;
+	}
+	56%{
+		/*transform: rotate(3deg);
+		bottom: 9%;*/
+		top:30%;
+		left: 20%;
+	}
+	58% {
+		top:30%;
+		left: 15%;
+	}
+	60%{
+		/*transform: rotate(3deg);
+		bottom: 5%;*/
+		top:30%;
+		left: 10%;
+	}
+	63%{
+		/*transform: rotate(-3deg);
+		bottom: 9%;*/
+		top:30%;
+		left: 15%;
+	}
+	66%{
+		/*transform: rotate(3deg);
+		bottom: 9%;*/
+		top:30%;
+		left: 20%;
+	}
+	68% {
+		top:30%;
+		left: 15%;
+	}
+
+	70%{
+		/*transform: rotate(-10deg);
+		bottom: 9%;*/
+		top:30%;
+		left: 15%;
+	}
+	80%{
+		/*bottom: 9%;*/
+		top:15%;
+		left: 15%;
+	}
+	90%{
+		/*bottom: 9%;*/
+		top:15%;
+		left: 15%;
+	}
+	100%{
+		/*transform: rotate(0deg);
+		bottom: 5%;*/
+		top:15%;
+		left: 15%;
+	}
+	
+}
+@keyframes catmouth {
+	0%{
+		/*transform: rotate(0deg);
+		bottom: 5%;*/
+		height: 30%;
+		opacity: 0;
+	}
+	5% {
+		height: 30%;
+		opacity: 1;
+	}
+	10%{
+		/*transform: rotate(3deg);
+		bottom: 5%;*/
+		
+	}
+	15% {
+		height: 30%;
+		opacity: 1;
+	}
+	20%{
+		/*transform: rotate(-3deg);
+		bottom: 5%;*/
+		height: 30%;
+		opacity: 0;
+	}
+	30%{
+		/*transform: rotate(3deg);
+		bottom: 5%;*/
+	}
+	40%{
+		/*transform: rotate(-3deg);
+		bottom: 9%;*/
+	}
+	50%{
+		/*transform: rotate(3deg);
+		bottom: 9%;*/
+	}
+	70%{
+		/*transform: rotate(-10deg);
+		bottom: 9%;*/
+	}
+	80%{
+		/*bottom: 9%;*/
+	}
+	90%{
+		/*bottom: 9%;*/
+	}
+	100%{
+		/*transform: rotate(0deg);
+		bottom: 5%;*/
+	}
+	
+}
+@keyframes cathand {
+	0%{
+		/*transform: rotate(0deg);
+		bottom: 5%;*/
+		opacity: 0;
+		bottom: -50%;
+	}
+	5% {
+		opacity: 1;
+	}
+	7% {
+		opacity: 1;
+		bottom: -20%;
+	}
+	10%{
+		/*transform: rotate(3deg);
+		bottom: 5%;*/
+		
+	}
+	15% {
+		opacity: 1;
+		bottom: -20%;
+	}
+	17% {
+		opacity: 0;
+	}
+	20%{
+		/*transform: rotate(-3deg);
+		bottom: 5%;*/
+		opacity: 0;
+		bottom: -50%;
+	}
+	28% {
+		opacity: 0;
+		bottom: -50%;
+		background: url('../imagesCAT/hand.svg') center/auto 70% no-repeat;
+	}
+	30%{
+		/*transform: rotate(3deg);
+		bottom: 5%;*/
+		opacity: 1;
+		bottom: -20%;
+		background: url('../imagesCAT/self.svg') center/auto 70% no-repeat;
+	}
+	40%{
+		/*transform: rotate(-3deg);
+		bottom: 9%;*/
+	}
+	50%{
+		/*transform: rotate(3deg);
+		bottom: 9%;*/
+	}
+	70%{
+		/*transform: rotate(-10deg);
+		bottom: 9%;*/
+		opacity: 1;
+		bottom: -20%;
+		background: url('../imagesCAT/self.svg') center/auto 70% no-repeat;
+	}
+	72% {
+		opacity: 0;
+		bottom: -50%;
+		background: url('../imagesCAT/hand.svg') center/auto 70% no-repeat;
+	}
+	80%{
+		/*bottom: 9%;*/
+	}
+	90%{
+		/*bottom: 9%;*/
+		
+	}
+	92%{
+		opacity: 0;
+		bottom: -50%;
+		background: url('../imagesCAT/hand.svg') center/auto 70% no-repeat;
+		/*transform: rotate(0deg);
+		bottom: 5%;*/
+	}
+	100% {
+
+	}
+}
+
+.cat-in-yan {
+	
+	animation: catinyan 0.5s linear forwards;
+}
+.cat-in-yan:before {
+	content: '';
+	position: absolute;
+	background: url('../imagesCAT/mouth.svg') center/100% auto no-repeat;
+	width: 30%;
+	height: 30%;
+	opacity: 1;
+	top: 48%;
+	left: 34%;
+}
+
+.cat-eye1-in-yan,
+.cat-eye2-in-yan {
+	background: url('../imagesCAT/eye.svg') center/auto 100% no-repeat;
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	top: 23%;
+}
+.cat-eye1-in-yan {left: 20%;}
+.cat-eye2-in-yan {right: 20%;}
+.cat-eye1-in-yan:before {
+	content: '';
+	height: 1%;
+	width: 1%;
+	box-shadow: 0 0 10px 10px rgb(255, 130, 130);
+	position: absolute;
+	bottom: -30%;
+	left: 0;
+	background:rgb(255, 130, 130);
+	z-index: 4;
+	animation: shd 0.3s linear 0.5s forwards;
+	opacity: 0;
+}
+.cat-in-yan::after {
+	content: '';
+	height: 1%;
+	width: 1%;
+	background:rgb(255, 130, 130);
+	box-shadow: 0 0 10px 10px rgb(255, 130, 130);
+	position: absolute;
+	bottom: 45%;
+	right: 20%;
+	z-index: 4;
+	opacity: 0;
+	animation: shd 0.3s linear 0.5s forwards;
+}
+.cat-hand-in-yan {
+	width: 70%;
+	height: 80%;
+	position: absolute;
+	z-index: 3;
+	bottom: -50%;
+	left: 0;
+	opacity: 0;
+	background: url('../imagesCAT/hand.svg') center/auto 70% no-repeat;
+	animation: cath 1s 0.5s forwards;
+}
+@keyframes cath {
+	0% {
+		bottom: -50%;
+		opacity: 0;
+	}
+	100% {
+		bottom: -20%;
+		opacity: 1;
+	}
+}
+.cat-mmm-in-yan {
+	height: 70%;
+	width: 70%;
+	left: 15%;
+	background: url('../imagesCAT/eye2.svg') center/auto 100% no-repeat;
+	position: absolute;
+	animation: eyeC 3s linear 0.5s infinite;
+}
+@keyframes shd {
+	0%{}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes catinyan {
+	0% {
+		background: url(../imagesCAT/catBG.svg) center/ auto 100% no-repeat;
+	width: 35%;
+	height: 35%;
+	position: absolute;
+	right: 50%;
+	bottom: 5%;
+
+	margin: 0 -19% 0 0 ;
+	}
+	
+	100%{
+		background: url(../imagesCAT/catBG.svg) center/ auto 100% no-repeat;
+		width: 45%;
+		height: 45%;
+		position: absolute;
+		right: 24.5%;
+		bottom: 22.5%;
+	}
+}
+@keyframes eyeC {
+	0% {
+		left: 15%;
+		bottom: 15%;
+	}
+	20% {
+		left: 3%;
+		bottom: 3%;
+	}
+	50% {
+		left: 15%;
+		bottom: 1%;
+	}
+	80% {
+		left: 3%;
+		bottom: 3%;
+	}
+	100%{
+		left: 15%;
+		bottom: 15%;
+	}
+}
+
+.h1 {
+	text-align: center;
+	padding: 10px;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+	color: #015AAA;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5%;
+	opacity: 0;
+	z-index: 10;
+	
+	transition: 0.2s 2s;
+}
